@@ -8,25 +8,26 @@
 ## Documentation
   Doxygen:
   https://htbryant1256.github.io/Integration-Project-New/html/
-![image](https://user-images.githubusercontent.com/60831223/146274278-99a7334f-deee-4e18-a549-3b4fabd6ecb4.png)
+
 
 ## Diagrams
   ![image](https://user-images.githubusercontent.com/60831223/146274245-a7458c21-745f-424d-967c-7a2f5a4be1ea.png)
 ![image](https://user-images.githubusercontent.com/60831223/146274302-46d2e0c8-458b-483f-bd97-21bf869a30af.png)
+![image](https://user-images.githubusercontent.com/60831223/146274465-7068ed86-b7a9-4839-9fd0-f2c4a19f5c18.png)
+![image](https://user-images.githubusercontent.com/60831223/146274278-99a7334f-deee-4e18-a549-3b4fabd6ecb4.png)
 ![Uploading image.png…]()
 
-
 ## Getting Started
-
+  Download and run the main file for the project.
 
 ## Built With
-
+  Visual Studio, C++
 
 ## Contributing
-
+  Contribute by adding larger food structs, and more accurate meal planning.
 
 ## Author
-
+  Henry Bryant
 
 ## License
 
@@ -41,4 +42,4 @@
 
 
 
-![image](https://user-images.githubusercontent.com/60831223/146271857-88844305-babf-4380-b659-98c4b451e1e1.png)
+
