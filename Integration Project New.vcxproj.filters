@@ -15,7 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Integration Project New.cpp">
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MealForUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lunch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dinner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Breakfast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,13 +38,16 @@
     <ClInclude Include="MealForUser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Breakfast.h">
+    <ClInclude Include="Dinner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Lunch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dinner.h">
+    <ClInclude Include="Breakfast.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

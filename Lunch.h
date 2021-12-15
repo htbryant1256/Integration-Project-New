@@ -1,38 +1,49 @@
 /**
----------------------------------
-This class is derived from the class MealForUser. It has inherited
-all of the functions from MealForUser. This class will later be updated
-to add far more additional content than the default inherited functions.
-As of now the description for every meal is changed.
+Header file for the Lunch.cpp file.
 
-This would be a Derived Class from the Base class "MealForUser"in
-the Visibility Inheritence Model.
----------------------------------
+
 */
-#include "MealForUser.h"
 
+#ifndef LUNCH_H
+#define LUNCH_H
+
+#include "MealForUser.h"
+/**
+Lunch class, inherits from MealForUser. Calculates number of food types per meal
+according to calories required for that meal.
+
+*/
 class Lunch : public MealForUser {
 
 private:
-
-
+	float number_of_cup_pasta;
+	float number_of_cup_rice;
+	float number_of_cup_steamed_vegtable;
 
 public:
+	struct food_data lunch;
 
 	// Getters ----------------------------
 
+	float GetNumberOfChickenTenderloins();
 
+	float GettNumberOfCupSteamedVegtable();
+
+	float GetNumberOfCupsRice();
 
 
 	// Setters ----------------------------
 
+	void SetNumberOfChickenTenderloin(float meal_calories);
 
+	void SetNumberOfCupSteamedVegtable(float meal_calories);
 
-	// Methods ---------------------------
-	void description() {
-		std::cout << "This is the users lunch. \n";
-	}
-
+	void SetNumberOfCupRice(float meal_calories);
+	void Description() override;
 
 
 };
+
+
+
+#endif

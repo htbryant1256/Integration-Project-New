@@ -1,38 +1,43 @@
-/**
----------------------------------
-This class is derived from the class MealForUser. It has inherited
-all of the functions from MealForUser. This class will later be updated
-to add far more additional content than the default inherited functions.
-As of now the description for every meal is changed.
+#ifndef BREAKFAST_H
+#define BREAKFAST_H
 
-This would be a Derived Class from the Base class "MealForUser"in
-the Visibility Inheritence Model.
----------------------------------
+/**
+Header file for the Breakfast.cpp file.
 */
 #include "MealForUser.h"
 
+/**
+Breakfast class, inherits from MealForUser. Calculates number of food types per meal
+according to calories required for that meal.
+
+*/
 class Breakfast : public MealForUser {
 
 private:
-	
-
+	float number_of_eggs;
+	float number_of_toasts;
+	float number_of_sausages;
 
 public:
+	struct food_data breakfast;
 
 	// Getters ----------------------------
-	
 
+	float GetNumberOfEggs();
 
+	float GetNumberOfSausages();
+	float GetNumberOfToasts();
 
 	// Setters ----------------------------
 
+	void SetNumberOfEggs(float meal_calories);
 
+	void SetNumberOfSausages(float meal_calories);
+
+	void SetNumberOfToasts(float meal_calories);
 
 	// Methods ---------------------------
-	void description() {
-		std::cout << "This is the users breakfast. \n";
-	}
-	
-
+	void Description() override;
 
 };
+#endif
