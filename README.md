@@ -39,6 +39,26 @@
 
 
 ## Key Programming Concepts Utilized
+LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
+Compare Contrast Prodecural Programing:
+    Procedural programing is good for small quick solutions, that opperate
+    squentially. While as functional programing should be used for
+    larger scale projects. This is because many of the functions and classes
+    written can be reused again for other purposes.
+
+LO3. Correctly reason about control flow in a program using dynamic dispatch.
+Control Flow and Dynamic Dispatch:
+    Dynamic dispatch is when a method is decided at runtime depending on what object
+    the code is pointing to. This allows for the more fluidity in the code and overall reuseablity. 
+    By using dynamic dispatch to change the control flow of a program can overall be more efficient than
+    calling individual methods from objects.
+LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
+Relationship Between OOI and Subtyping:
+    OOI is when a derived class inherits the public methods of the parent class.
+    This aids in resuing code and the overall orginization of the code. By using virtual
+    functions and overriding methods, the derived class can have a different result from a 
+    method with the same name in the parent class. 
+
 
 
 
