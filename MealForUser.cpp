@@ -1,3 +1,4 @@
+
 /**
 ---------------------------------
 Base template class all other classes are formed from.
@@ -15,6 +16,7 @@ This would be the Base Class in the Visibility Inheritence Model.
 
 // Default constructor with initialization list
 // initialized calories_per_meal as 700 for a default average meal
+//LO1c. Utilize an initialization list
 MealForUser::MealForUser() : calories_per_meal{ 700 } {}
 
 // Overloaded constructor with initialization list
@@ -24,11 +26,11 @@ MealForUser::MealForUser(float input_calories) : calories_per_meal{ input_calori
 // Getters ----------------------------
 
 
-float MealForUser::GetCaloriesPerMeal() {
+auto MealForUser::GetCaloriesPerMeal() -> float {
 	return calories_per_meal;
 }
 	
-bool MealForUser::GetFavoriteMeal() {
+auto MealForUser::GetFavoriteMeal() ->bool {
 	return favorite_meal;
 }
 
@@ -45,7 +47,7 @@ Parameters:
 	Void
 */
 void MealForUser::SetCaloriesPerMeal(float calories_per_day) {
-	int preference_modifier = 12;
+	const float preference_modifier = 12;
 
 	if (!favorite_meal) {
 		calories_per_meal = (calories_per_day / 3) - (calories_per_day / preference_modifier / 2);

@@ -1,18 +1,19 @@
 /**
 ---------------------------------
+LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
 Compare Contrast Prodecural Programing:
     Procedural programing is good for small quick solutions, that opperate
     squentially. While as functional programing should be used for
     larger scale projects. This is because many of the functions and classes
     written can be reused again for other purposes.
 
-
+LO3. Correctly reason about control flow in a program using dynamic dispatch.
 Control Flow and Dynamic Dispatch:
     Dynamic dispatch is when a method is decided at runtime depending on what object
     the code is pointing to. This allows for the more fluidity in the code and overall reuseablity. 
     By using dynamic dispatch to change the control flow of a program can overall be more efficient than
     calling individual methods from objects.
-
+LO5. Explain the relationship between object-oriented inheritance (code-sharing and overriding) and subtyping (the idea of a subtype being usable in a context that expects the supertype).
 Relationship Between OOI and Subtyping:
     OOI is when a derived class inherits the public methods of the parent class.
     This aids in resuing code and the overall orginization of the code. By using virtual
@@ -34,21 +35,20 @@ Relationship Between OOI and Subtyping:
 //------------------------------------------------------------------------------
 // Function Prototypes
 
-void AskForWeight(User&);
-void AskForHeight(User&);
-void AskForCalorieGoal(float&);
-void DisplayCal(MealForUser&);
-void DisplayBMI(User&);
+void AskForWeight(User& user);
+void AskForHeight(User& user);
+void AskForCalorieGoal(float& calories);
+void DisplayCal(MealForUser& meal);
+void DisplayBMI(User& user);
 
 void AskForFavMeal(Breakfast&, Lunch&, Dinner&);
 void DisplayMealPlan(MealForUser, MealForUser, MealForUser, Breakfast, Lunch, Dinner);
 
 //------------------------------------------------------------------------------
 //main
-int main()
+auto main() -> int
 {
     User user;
-    int meal_preference;
     float calories;
 
 //Promt User for weight height and calorie goal
@@ -142,7 +142,7 @@ Ask user to enter weight in pounds and store the weight in user class
 */
 void AskForWeight(User& user) 
 {
-    int weight;
+    float weight;
     std::cout << "Enter weight in pounds: \n";
     std::cin >> weight;
     user.SetWeight(weight);
@@ -156,7 +156,7 @@ Ask user to enter height in feet then inches, and store the height in user class
 */
 void AskForHeight(User& user) 
 {
-    int feet, inches;
+    float feet, inches;
     std::cout << "Enter height in feet then inches on the same line: \n";
     std::cin >> feet >> inches;
     user.SetHeightInFeet(feet);

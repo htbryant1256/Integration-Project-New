@@ -14,19 +14,21 @@ according to calories required for that meal.
 class Breakfast : public MealForUser {
 
 private:
-	float number_of_eggs;
-	float number_of_toasts;
-	float number_of_sausages;
+	const int six = 6;
+
+	float number_of_eggs = 0;
+	float number_of_toasts = 0;
+	float number_of_sausages = 0;
 
 public:
-	struct food_data breakfast;
+	const struct food_data breakfast;
 
 	// Getters ----------------------------
 
-	float GetNumberOfEggs();
+	auto GetNumberOfEggs() ->  float;
 
-	float GetNumberOfSausages();
-	float GetNumberOfToasts();
+	auto GetNumberOfSausages() -> float;
+	auto GetNumberOfToasts() ->  float;
 
 	// Setters ----------------------------
 

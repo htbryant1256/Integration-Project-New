@@ -13,19 +13,18 @@ the Visibility Inheritence Model.
 #include <iostream>
 
 
-struct Lunch::food_data lunch;
 
 // Getters ----------------------------
 
-float Lunch::GetNumberOfChickenTenderloins() {
+auto Lunch::GetNumberOfChickenTenderloins() -> float {
 	return number_of_cup_pasta;
 }
 
-float Lunch::GettNumberOfCupSteamedVegtable() {
+auto Lunch::GettNumberOfCupSteamedVegtable()-> float {
 	return number_of_cup_steamed_vegtable;
 }
 
-float Lunch::GetNumberOfCupsRice() {
+auto Lunch::GetNumberOfCupsRice()-> float {
 	return number_of_cup_rice;
 }
 
@@ -42,8 +41,8 @@ Parameters:
 	Void
 */
 void Lunch::SetNumberOfChickenTenderloin(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_one = x * 3;
+	const float x = meal_calories / six;
+	const float part_one = x * 3;
 	number_of_cup_pasta = part_one / lunch.chicken_tenderloin_calories;
 
 }
@@ -56,8 +55,8 @@ Parameters:
 	Void
 */
 void Lunch::SetNumberOfCupSteamedVegtable(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_two = x * 2;
+	const float x = meal_calories / six;
+	const float part_two = x * 2;
 	number_of_cup_steamed_vegtable = part_two / lunch.cup_steamed_vegtable_calories;
 
 }
@@ -70,8 +69,8 @@ Parameters:
 	Void
 */
 void Lunch::SetNumberOfCupRice(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_three = x;
+	const float x = meal_calories / six;
+	const float part_three = x;
 	number_of_cup_rice = part_three / lunch.cup_rice_calories;
 
 }

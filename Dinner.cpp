@@ -5,26 +5,27 @@ all of the functions from MealForUser. This class will later be updated
 to add far more additional content than the default inherited functions.
 As of now the description for every meal is changed.
 
+LO2a. Include comments describing the visibility inheritance model
 This would be a Derived Class from the Base class "MealForUser"in
 the Visibility Inheritence Model.
 
 ---------------------------------
 */
+//LO1a.At least one class in a header file with non - trivial methods implemented in a cpp file
 #include "Dinner.h"
 #include <iostream>
 
-	struct Dinner::food_data dinner;
 
 	// Getters ----------------------------
 
-	float Dinner::GetNumberOfCupPasta() {
+	auto Dinner::GetNumberOfCupPasta() -> float {
 		return number_of_cup_pasta;
 	}
 
-	float Dinner::GetNumberOfPorkChop() {
+	auto Dinner::GetNumberOfPorkChop() -> float {
 		return number_of_pork_chop;
 	}
-	float Dinner::GetNumberOfPotato() {
+	auto Dinner::GetNumberOfPotato() -> float {
 		return number_of_potato;
 	}
 
@@ -39,8 +40,8 @@ Parameters:
 	Void
 */
 	void Dinner::SetNumberOfCupPasta(float meal_calories) {
-		float x = meal_calories / 6;
-		float part_one = x * 3;
+		const float x = meal_calories / six;
+		const float part_one = x * 3;
 		number_of_cup_pasta = part_one / dinner.cup_pasta_calories;
 
 	}
@@ -53,8 +54,8 @@ Parameters:
 	Void
 */
 	void Dinner::SetNumberOfPorkChop(float meal_calories) {
-		float x = meal_calories / 6;
-		float part_two = x * 2;
+		const float x = meal_calories / six;
+		const float part_two = x * 2;
 		number_of_pork_chop = part_two / dinner.pork_chop_calories;
 
 	}
@@ -67,8 +68,8 @@ Parameters:
 	Void
 */
 	void Dinner::SetNumberOfPotato(float meal_calories) {
-		float x = meal_calories / 6;
-		float part_three = x;
+		const float x = meal_calories / six;
+		const float part_three = x;
 		number_of_potato = part_three / dinner.potato_calories;
 
 	}

@@ -4,7 +4,7 @@ This class is derived from the class MealForUser. It has inherited
 all of the functions from MealForUser. This class will later be updated
 to add far more additional content than the default inherited functions.
 As of now the description for every meal is changed.
-
+LO2a. Include comments describing the visibility inheritance model
 This would be a Derived Class from the Base class "MealForUser"in
 the Visibility Inheritence Model.
 ---------------------------------
@@ -12,19 +12,18 @@ the Visibility Inheritence Model.
 #include "Breakfast.h"
 #include <iostream>
 
-struct Breakfast::food_data breakfast;
 
 // Getters ----------------------------
 
-float Breakfast::GetNumberOfEggs() {
+auto Breakfast::GetNumberOfEggs()-> float {
 	return number_of_eggs;
 }
 
-float Breakfast::GetNumberOfSausages() {
+auto Breakfast::GetNumberOfSausages() -> float {
 	return number_of_sausages;
 }
 
-float Breakfast::GetNumberOfToasts() {
+auto Breakfast::GetNumberOfToasts() ->  float{
 	return number_of_toasts;
 }
 
@@ -39,8 +38,8 @@ Parameters:
 	Void
 */
 void Breakfast::SetNumberOfEggs(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_one = x * 3;
+	const float X = meal_calories / six;
+	float part_one = X * 3;
 	number_of_eggs = part_one / breakfast.egg_calories;
 
 }
@@ -53,8 +52,8 @@ Parameters:
 	Void
 */
 void Breakfast::SetNumberOfSausages(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_two = x * 2;
+	const float X = meal_calories / six;
+	const float part_two = X * 2;
 	number_of_sausages = part_two / breakfast.sausage_calories;
 
 }
@@ -67,8 +66,8 @@ Parameters:
 	Void
 */
 void Breakfast::SetNumberOfToasts(float meal_calories) {
-	float x = meal_calories / 6;
-	float part_three = x;
+	const float X = meal_calories / six;
+	const float part_three = X;
 	number_of_toasts = part_three / breakfast.toast_calories;
 
 }

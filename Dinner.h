@@ -14,14 +14,16 @@ according to calories required for that meal.
 class Dinner : public MealForUser {
 
 private:
-	float number_of_cup_pasta;
-	float number_of_pork_chop;
-	float number_of_potato;
+	const int six = 6;
+
+	float number_of_cup_pasta = 0;
+	float number_of_pork_chop = 0;
+	float number_of_potato = 0;
 
 
 public:
 
-	struct food_data dinner;
+	const struct food_data dinner;
 
 	// Getters ----------------------------
 

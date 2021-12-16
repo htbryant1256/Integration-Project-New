@@ -7,23 +7,23 @@ This is the user class, used to store data about the users height and weight.
 #include "User.h"
 // Getters ----------------------------
 
-int User::GetHeightInFeet() {
+auto User::GetHeightInFeet() -> float {
 	return height_in_feet;
 }
-int User::GetHeightInInches() {
+auto User::GetHeightInInches()-> float {
 	return height_in_inches;
 }
-int User::GetWeight() {
+auto User::GetWeight()-> float {
 	return weight;
 }
 
 
 
 // Setters ----------------------------
-void User::SetHeightInFeet(int feet) {
+void User::SetHeightInFeet(float feet) {
 	height_in_feet = feet;
 }
-void User::SetHeightInInches(int inches) {
+void User::SetHeightInInches(float inches) {
 	height_in_inches = inches;
 }
 void User::SetWeight(float user_weight) {
@@ -38,7 +38,7 @@ Parameters:
  Returns:
 	float total_height_in_inches
 */
-float User::CalculateTotalHeightInInches() {
+auto User::CalculateTotalHeightInInches()-> float {
 	float total_height_in_inches = (height_in_feet * 12) + height_in_inches;
 	return total_height_in_inches;
 }
@@ -49,7 +49,7 @@ Parameters:
  Returns:	
 	float BMI			BMI of user
 */
-float User::CalculateBMI() {
+auto User::CalculateBMI() -> float {
 	float total_height_in_inches = (height_in_feet * 12) + height_in_inches;
 
 	float BMI = (weight / total_height_in_inches / total_height_in_inches) * 703;
