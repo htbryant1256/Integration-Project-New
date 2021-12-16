@@ -15,7 +15,7 @@
 ![image](https://user-images.githubusercontent.com/60831223/146274302-46d2e0c8-458b-483f-bd97-21bf869a30af.png)
 ![image](https://user-images.githubusercontent.com/60831223/146274465-7068ed86-b7a9-4839-9fd0-f2c4a19f5c18.png)
 ![image](https://user-images.githubusercontent.com/60831223/146274278-99a7334f-deee-4e18-a549-3b4fabd6ecb4.png)
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/60831223/146289219-132c2cba-2ec7-4777-937f-34005f3e9989.png)
 
 ## Getting Started
   Download and run the main file for the project.
@@ -58,6 +58,10 @@ Relationship Between OOI and Subtyping:
     This aids in resuing code and the overall orginization of the code. By using virtual
     functions and overriding methods, the derived class can have a different result from a 
     method with the same name in the parent class. 
+    
+##Warnings
+![Uploading image.png…]()
+
 
 
 
